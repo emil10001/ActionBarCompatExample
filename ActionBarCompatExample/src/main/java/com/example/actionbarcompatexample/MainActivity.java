@@ -13,6 +13,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+// Adopted from: https://developer.android.com/training/implementing-navigation/nav-drawer.html
 public class MainActivity extends ActionBarActivity {
 
     private String[] mPlanetTitles;
