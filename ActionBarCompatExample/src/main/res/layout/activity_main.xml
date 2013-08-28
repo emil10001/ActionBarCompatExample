@@ -5,7 +5,9 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- The main content view -->
+    <!-- The main content view 
+    based on code from:
+    http://blog.bignerdranch.com/2765-exploring-slidingpanelayout/ -->
     <android.support.v4.widget.SlidingPaneLayout
         android:id="@+id/pane"
         android:layout_width="match_parent"
