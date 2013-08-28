@@ -22,7 +22,7 @@ public class MainActivity extends ActionBarActivity {
     private ListView mDrawerList;
     private CharSequence mTitle;
     private ActionBarDrawerToggle mDrawerToggle;
-    private SlidingPaneLayout mPanel;
+    private SlidingPaneLayout mPane;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,8 +66,12 @@ public class MainActivity extends ActionBarActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
 
-        mPanel = (SlidingPaneLayout)findViewById(R.id.panel);
-        mPanel.openPane();
+        mPane = (SlidingPaneLayout) findViewById(R.id.pane);
+
+        mPane.openPane();
+
+        getSupportFragmentManager().beginTransaction().add(R.id.pane1, new PaneOneFrag(), "pane1").commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.pane2, new PaneTwoFrag(), "pane2").commit();
 
     }
 

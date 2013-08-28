@@ -7,22 +7,22 @@
 
     <!-- The main content view -->
     <android.support.v4.widget.SlidingPaneLayout
-        android:id="@+id/panel"
+        android:id="@+id/pane"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
+        <FrameLayout
+            android:id="@+id/pane1"
             android:layout_width="360dp"
             android:layout_height="match_parent"
-            android:background="#CC00FF00"
-            android:text="Pane 1" />
+            android:background="#CC00FF00" />
 
-        <TextView
+        <FrameLayout
+            android:id="@+id/pane2"
             android:layout_width="400dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#CC0000FF"
-            android:text="Pane 2" />
+            android:background="#CC0000FF" />
     </android.support.v4.widget.SlidingPaneLayout>
 
     <!-- The navigation drawer -->
